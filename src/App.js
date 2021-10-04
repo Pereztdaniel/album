@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, {Fragment}  from 'react';
 import './App.css';
+import Header from './components/header/Header';
+import Container from './components/container/Container';
+import Footer from './components/footer/Footer';
 
-function App() {
+export default function App() {
+
+  const fecha = new Date().getFullYear();
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Danielazo
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          danielazo
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+    <Fragment>
+        <Header/>
+        <Container />
+        <Footer fecha={fecha} />
+    </Fragment>  
+
+      
+    );
+}

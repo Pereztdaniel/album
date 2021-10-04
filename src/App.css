@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+/*GLOBAL*/
+
+ body{
+  background: rgb(248, 249, 250);
+  font-family: 'Montserrat Alternates', sans-serif;
+ }
+
+ h2{
+  font-size: 1.1em;
+ }
+
+ /*BUTTON*/
+
+ .btn{
+  background: #1f527d;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn:hover{
+  background: #1f527dd6;
+  border: none; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*HEADER*/
+
+.banner{
+    height: 400px;
+    width: 100%;
+    background-image: url(juan-griego-139401_1280.jpg);
+    background-size: cover;
+    overflow: hidden;
+    color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title{
+    font-weight: bold;
+ }
+
+ .glass{
+  background-color: rgba(245,245,245,0.95);
+  backdrop-filter: blur(20px);
+ }
+
+ .glassmorphism{
+  background-color: rgba(245,245,245,0.2); 
+  
+ }
+
+/*NAVBAR*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+    font-size: 1.05em;
+    margin-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-dark .navbar-nav .nav-link:hover {
+  transform: scale(1.05);
+  background: rgba(233, 236, 239, 0.5);
+  color: #252525;
+  border-radius: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown-menu{
+  background-color: rgba(245,245,245,0.2);
+  backdrop-filter: blur(10px);
 }
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover{
+  color: #252525;
+}
+
+.navbar-dark .navbar-toggler{
+  background: #0000004d;
+  border: #fff;
+}
+
+/*MODAL*/
+
+.fakeimg {
+    height: 400px;
+    background: #252525;
+}
+
+.justify{
+  text-align: justify;
+  font-size: 0.91em;
+}
+
+/*FOOTER*/
+
+ .bg-red{
+  background: #b83737;
+  color: #fff;
+ }
+
+ .ig{
+  margin-right: 10px;
+  font-size: 1.5em;
+  color: #fff;
+
+
+ }
+
